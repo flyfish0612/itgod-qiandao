@@ -19,11 +19,11 @@ def getOpener(head):
   
 def ungzip(data):  
     try:        # try extract  
-        print('extracting file .....')  
+        print('trying .....')  
         data = gzip.decompress(data)  
         print('finished!')  
     except:  
-        print('it is ok,do not need to extract.')  
+        print('it is ok.')  
     return data  
   
   
@@ -31,7 +31,7 @@ header = {
     'Connection': 'Keep-Alive',  
     'Accept-Language': 'zh-CN,zh;q=0.8', 
     'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',  
-    'User-Agent':' Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',  
+    'User-Agent':'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36',  
     'Accept-Encoding': 'gzip, deflate',  
     'Host': '123.206.92.65',  
 }  
@@ -40,8 +40,8 @@ header = {
 url = 'http://123.206.92.65/web/useraction.php?a=dologin'  
 opener = getOpener(header)  
   
-id = 'xxxxxxx'  
-password = 'xxxxxx'  
+id = 'xxxxxx'  
+password = 'xxxxxxx'  
 postDict = {  
         'qq': id,  
         'pass': password,  
